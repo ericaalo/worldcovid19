@@ -1,0 +1,12 @@
+Package: worldcovid19
+Type: Package
+Title: Worldwide Coronavirus Data Analysis
+Version: 0.1.0
+Author: Eric Aalo
+Maintainer: <eric.aalo96@gmail.com>
+Description: This package is an analysis of covid-19 datasets to show spread and growth of pandemic at different levels.
+Depends: R(>= 3.0.1)
+License: CC0 1.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
