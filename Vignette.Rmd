@@ -1,0 +1,38 @@
+---
+title: "Vignette"
+author: "Eric Aalo"
+date: "4/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Vignette
+
+```{r casestotal}
+summary(casestotal)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r deathstotal, echo=FALSE}
+boxplot(deathstotal)
+```
+
+## Showing Dataframe Creation
+
+```{r casesdf}
+sortedcases<-sort(casestotal, decreasing = TRUE)
+top10<-sortedcases[1:10]
+names<-c("USA", "Spain", "Italy", "France", "Germany", "UK", "Turkey", "Iran", "China", "Russia")
+casesdf<-data.frame(top10, names)
+```
+
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
